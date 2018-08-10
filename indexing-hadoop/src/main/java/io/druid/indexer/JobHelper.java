@@ -746,6 +746,8 @@ public class JobHelper
       }
     } else if ("hdfs".equals(type)) {
       segmentLocURI = URI.create(loadSpec.get("path").toString());
+    } else if ("wasbs".equals(type)) {
+      segmentLocURI = URI.create(loadSpec.get("path").toString());
     } else if ("google".equals(type)) {
       // Segment names contain : in their path.
       // Google Cloud Storage supports : but Hadoop does not.

@@ -65,6 +65,12 @@
             <artifactId>jackson-module-guice</artifactId>
             <version>${jackson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-azure</artifactId>
+            <version>${hadoop.compile.version}</version>
+        </dependency>
+
 
         <!-- Tests -->
         <dependency>

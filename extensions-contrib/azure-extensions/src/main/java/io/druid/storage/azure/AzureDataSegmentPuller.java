@@ -42,7 +42,7 @@ public class AzureDataSegmentPuller implements DataSegmentPuller
   // wasb[s]://<containername>@<accountname>.blob.core.windows.net/<path>
   // (from https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-use-blob-storage)
   static final String AZURE_STORAGE_HADOOP_PROTOCOL = "wasbs";
-  
+
   static final String AZURE_STORAGE_HOST_ADDRESS = "blob.core.windows.net";
 
   private final AzureStorage azureStorage;
@@ -124,3 +124,5 @@ public class AzureDataSegmentPuller implements DataSegmentPuller
     FileUtils.forceMkdir(outDir);
   }
 }
+
+
